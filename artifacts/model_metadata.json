@@ -1,0 +1,50 @@
+{
+  "project": "Malaria Parasite Detection from Blood Smear Images Using a Convolutional Neural Network",
+  "architecture": "custom three-block CNN with adaptive average pooling",
+  "parameters": 295842,
+  "image_size": 96,
+  "class_order": [
+    "Uninfected",
+    "Parasitized"
+  ],
+  "best_epoch": 5,
+  "best_validation_loss": 0.14461713979839488,
+  "training_config": {
+    "seed": 42,
+    "image_size": 96,
+    "batch_size": 64,
+    "epochs": 6,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 2,
+    "num_workers": 2,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "threshold": 0.5
+  },
+  "patient_grouped_split": true,
+  "split_summary": {
+    "train": {
+      "images": 19112,
+      "patients": 141,
+      "uninfected_cells": 9656,
+      "parasitized_cells": 9456
+    },
+    "validation": {
+      "images": 4518,
+      "patients": 31,
+      "uninfected_cells": 2124,
+      "parasitized_cells": 2394
+    },
+    "test": {
+      "images": 3928,
+      "patients": 29,
+      "uninfected_cells": 1999,
+      "parasitized_cells": 1929
+    }
+  },
+  "test_metrics_file": "test_metrics.json",
+  "elapsed_training_seconds": 2045.9,
+  "clinical_use": "research/education only; not validated for clinical use"
+}

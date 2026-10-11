@@ -1,0 +1,21 @@
+flowchart TB
+  subgraph data[Dataset and patient grouping]
+    A[NIH/NLM segmented cell images] --> C[Image file index]
+    B[Official patient-to-cell maps] --> C
+    C --> D[Patient-grouped 70 / 15 / 15 split]
+  end
+  subgraph model[Training and evaluation]
+    D --> E[Train cells: 96 × 96 RGB + geometric augmentation]
+    D --> F[Validation cells: no augmentation]
+    D --> G[Held-out patient test cells]
+    E --> H[Custom CNN: conv blocks 32 / 64 / 128]
+    F --> J[Validation loss selects checkpoint]
+    J -. early stopping and selection .-> H
+    H --> K[Saved best checkpoint]
+    G --> O[Final patient-held-out metrics]
+  end
+  subgraph demo[Local browser demo]
+    M[One uploaded cell image] --> L[FastAPI in-memory prediction]
+    K --> L
+    L --> N[Class + uncalibrated scores]
+  end

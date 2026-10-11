@@ -1,0 +1,21 @@
+{
+  "retrieved_utc": "2026-10-10T13:50:26.472986+00:00",
+  "sources": {
+    "data/raw/cell_images.zip": {
+      "bytes": 353452851,
+      "sha256": "0a949556b2414159b5100192609805376654c4266d8d187be9b1922fad43c668"
+    },
+    "data/raw/patientid_cellmapping_parasitized.csv": {
+      "bytes": 761124,
+      "sha256": "d0367e513397404e980baee2a641bce9ce329a22e62ea9007962dfca2f8418d3"
+    },
+    "data/raw/patientid_cellmapping_uninfected.csv": {
+      "bytes": 667059,
+      "sha256": "a8577b21e7154724f4bbd18326218e2c63a99b22ab372b79a7530d36df6dab78"
+    },
+    "web/assets/cdc-malaria-smear.png": {
+      "bytes": 431002,
+      "sha256": "ac52297875e0c6a6e0f50d4c7d32d3fbca4f3f61dab890e30cff3cd09ef42e51"
+    }
+  }
+}

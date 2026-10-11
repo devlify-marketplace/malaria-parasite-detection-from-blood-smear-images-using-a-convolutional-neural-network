@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/malaria_cnn/__init__.py
+src/malaria_cnn/api.py
+src/malaria_cnn/data.py
+src/malaria_cnn/inference.py
+src/malaria_cnn/model.py
+src/malaria_cnn/train.py
+src/malaria_smear_cnn.egg-info/PKG-INFO
+src/malaria_smear_cnn.egg-info/SOURCES.txt
+src/malaria_smear_cnn.egg-info/dependency_links.txt
+src/malaria_smear_cnn.egg-info/requires.txt
+src/malaria_smear_cnn.egg-info/top_level.txt
+tests/test_api.py
+tests/test_data.py
+tests/test_model.py

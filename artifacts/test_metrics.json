@@ -1,0 +1,29 @@
+{
+  "threshold": 0.5,
+  "accuracy": 0.950356415478615,
+  "balanced_accuracy": 0.95029072338139,
+  "sensitivity_parasitized": 0.9466044582685329,
+  "specificity_uninfected": 0.9539769884942472,
+  "precision_parasitized": 0.9520333680917622,
+  "f1_parasitized": 0.9493111515466597,
+  "roc_auc": 0.985573139083798,
+  "matthews_correlation_coefficient": 0.900685510867593,
+  "confusion_matrix": {
+    "true_uninfected": 1907,
+    "false_parasitized": 92,
+    "missed_parasitized": 103,
+    "true_parasitized": 1826
+  },
+  "class_counts": {
+    "uninfected": 1999,
+    "parasitized": 1929
+  },
+  "test_loss": 0.1460025737672862,
+  "best_epoch": 5,
+  "patient_grouped_holdout": true,
+  "test_patient_count": 29,
+  "validation_patient_count": 31,
+  "test_image_count": 3928,
+  "device": "cpu",
+  "seed": 42
+}
