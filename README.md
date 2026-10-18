@@ -4,6 +4,12 @@
 
 > **Research-only scope:** this model classifies a cropped cell image. It does not examine a full slide, count parasites, estimate patient parasitaemia, identify all malaria species, or diagnose a person. It is not validated for clinical use and must not guide treatment. A trained microscopist and approved diagnostic workflow remain essential.
 
+## Devlify
+
+An academic project in the [Devlify GitHub collection](https://github.com/devlify-marketplace).
+
+[Visit Devlify](https://devlify.com.ng) · [Browse the marketplace](https://devlify.com.ng/marketplace)
+
 ## Included
 
 - `scripts/download_dataset.py` — downloads the NIH/NLM single-cell archive and its patient-to-cell mapping files, checks ZIP integrity, extracts safely, and records SHA-256 checksums.
